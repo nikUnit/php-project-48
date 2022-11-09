@@ -1,0 +1,22 @@
+{
+    "name": "hexlet/code",
+    "description": "project #2 in Hexlet",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nikUnit",
+            "email": "kolyaibresi19999@gmail.com"
+        }
+    ],
+    "require": {
+        "docopt/docopt": "^1.0"
+    },
+    "bin": [
+        "gendiff"
+    ],
+    "license": "MIT"
+}

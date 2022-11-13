@@ -2,6 +2,10 @@
 <?php
 require_once __DIR__.'/vendor/autoload.php';
 
+use function Differ\Differ\gendiff;
+
+// gendiff('/files/file1.json', '/files/file2.json');
+
 $doc = <<<DOC
 Generate diff
 
@@ -18,5 +22,8 @@ Options:
 DOC;
 
 $args = Docopt::handle($doc, array('version'=>'Gendiff 1.0'));
+var_dump($args);
+die();
 foreach ($args as $k=>$v)
-    echo $k.': '.json_encode($v).PHP_EOL;
+echo $v.PHP_EOL;
+    //echo $k.': '.json_encode($v).PHP_EOL;
